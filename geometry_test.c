@@ -24,15 +24,14 @@ START_TEST(test_2d_area_triangle)
     coord_2d_t b;
     coord_2d_t c;
     
-    a.x = 0;
+    a.x = -1;
     a.y = 0;
-    b.x = 3;
+    b.x = 1;
     b.y = 0;
     c.x = 1;
     c.y = 1;
     double area = coord_2d_area_triangle(&a,&b,&c);
-    printf("\n\nArea=%f\n\n",area);
-    ck_assert(area == 1.5);
+    ck_assert(area == 1);
 
 }
 END_TEST
